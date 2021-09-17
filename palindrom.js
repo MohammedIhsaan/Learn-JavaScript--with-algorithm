@@ -15,26 +15,24 @@
 // console.log("log",parlindrom('racecar'))
 
 function palidrom(str){
-    let strArray = str.split('')
-    let reverseStrArray = []
+    let str1 = ''
     
-    for(let i=strArray.length ;i>=0;i--){
-      reverseStrArray.push(strArray[i])
+    
+    for(let i=str.length-1 ;i>=0;i--){
+      str1 += str[i]
          
     }
 
 
-  let data =   reverseStrArray.join("")
-
-  if(str===data){
+  if(str===str1){
       console.log('It  is a Palindrom')
     }
     else{
       console.log('It  is not Palindrom')
 
   }
-    console.log("dddd",data)
+    console.log("dddd",str1)
 }
 
-console.log("log",palidrom('level'))
+console.log("log",palidrom('now'))
 
